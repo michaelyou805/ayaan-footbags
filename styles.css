@@ -78,9 +78,25 @@ body {
   50% { transform: translate(30px, -20px) scale(1.08); }
 }
 
-.site-header {
+.top-greeting {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent-3);
+  background: rgba(15, 20, 25, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-header {
+  position: fixed;
+  top: 2.25rem;
   left: 0;
   right: 0;
   z-index: 100;
@@ -138,7 +154,7 @@ main {
   grid-template-columns: 1fr 1.2fr;
   align-items: center;
   gap: 2rem;
-  padding: 7rem 2rem 4rem;
+  padding: 9rem 2rem 4rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -541,7 +557,7 @@ main {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 
   .tagline {
