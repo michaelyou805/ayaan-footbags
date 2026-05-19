@@ -45,7 +45,7 @@ const FOOTBAGS = [
     name: "Electric Blue",
     type: "neon",
     colors: { c1: "#00d4ff" },
-    desc: "Bright cyan that pops against any background.",
+    desc: "Brighta cyan that pops against any background.",
   },
   {
     name: "Midnight Denim",
