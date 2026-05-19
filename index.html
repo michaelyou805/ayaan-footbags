@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaan Diop — Footbag Collector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-sack" aria-hidden="true"></span>
+      <span>Ayaan's Sacks</span>
+    </div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Meet the master collector</p>
+        <h1>Ayaan Diop</h1>
+        <p class="tagline">Holding more footbags than anyone you know.</p>
+        <a href="#collection" class="cta-btn">See the collection</a>
+      </div>
+
+      <div class="hero-scene" aria-label="Ayaan Diop surrounded by footbags">
+        <div class="footbag-ring" id="hero-footbags"></div>
+        <div class="ayaan-frame">
+          <img src="assets/ayaan.jpg" alt="Ayaan Diop smiling" class="ayaan-photo" width="420" height="520">
+          <div class="arm-sacks arm-left" aria-hidden="true"></div>
+          <div class="arm-sacks arm-right" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection">
+      <h2>The Collection</h2>
+      <p class="section-sub">Every sack has a story. Tap one to learn more.</p>
+      <div class="sack-grid" id="sack-grid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-card">
+        <h2>About Ayaan</h2>
+        <p>
+          Ayaan Diop doesn't just play with footbags — he collects them. Crochet classics,
+          suede legends, neon festival sacks, and rare denim patches all find a home in his
+          hands. Whether he's stalling, kicking, or just showing off the rainbow, one thing
+          is certain: there's always room for one more hacky sack.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-num" data-target="24">0</span>
+            <span class="stat-label">Footbags held at once</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-label">Tricks landed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Love for the game</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with footbags &amp; friendship · Ayaan Diop</p>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Close">&times;</button>
+      <div class="modal-sack" id="modal-sack" aria-hidden="true"></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
